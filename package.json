@@ -1,0 +1,31 @@
+{
+  "name": "markfetch-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Markfetch — scrape any URL to clean markdown, or screenshot it, from Claude/Cursor.",
+  "type": "module",
+  "bin": {
+    "markfetch-mcp": "dist/index.js"
+  },
+  "files": ["dist"],
+  "keywords": ["mcp", "model-context-protocol", "scrape", "markdown", "llm", "claude", "cursor", "web-scraping"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdfas988/markfetch-mcp.git"
+  },
+  "homepage": "https://markfetch.com",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
